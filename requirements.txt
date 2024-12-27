@@ -1,0 +1,8 @@
+rdkit==2024.3.5
+torch==2.4.1
+torch-geometric==2.6.1
+torchdata==0.8.0
+pandas==2.0.3
+trasnformer==4.32.1
+PIL==9.4.0
+stramlit==1.41.1
