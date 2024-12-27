@@ -3,5 +3,5 @@ torch==2.4.1
 torch-geometric==2.6.1
 torchdata==0.8.0
 pandas==2.0.3
-trasnformer==4.32.1
+trasnformer
 PIL==9.4.0
