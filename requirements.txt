@@ -1,4 +1,4 @@
-rdkit==2024.3.5
+rdkit
 torch==2.4.1
 torch-geometric==2.6.1
 torchdata==0.8.0
