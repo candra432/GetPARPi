@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas as pd
+# import pandas as pd
 import torch
 import torch.nn.functional as F
 from torch_geometric.nn import TransformerConv, global_mean_pool
