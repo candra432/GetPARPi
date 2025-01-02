@@ -6,8 +6,8 @@ from torch_geometric.nn import TransformerConv, global_mean_pool
 from torch_geometric.data import Data, DataLoader
 from transformers import AutoTokenizer, AutoModel
 from rdkit import Chem
-from rdkit.Chem import AllChem, Draw
-from rdkit.Chem.Draw import rdMolDraw2D
+# from rdkit.Chem import AllChem, Draw
+# from rdkit.Chem.Draw import rdMolDraw2D
 from PIL import Image
 from model import GNN, create_data_object
 import io
@@ -173,14 +173,14 @@ elif page == "Single Prediction🧬":
                         st.markdown(f"- **PCScoreInh:** {pc_score_inh:.2f}%")
                         st.markdown(f"- **Class:** {is_inhibitor}")
 
-                        # Display molecular structure
-                        mol = Chem.MolFromSmiles(smiles_input)
-                        if mol:
-                            drawer = rdMolDraw2D.MolDraw2DCairo(800, 800)
-                            rdMolDraw2D.PrepareAndDrawMolecule(drawer, mol)
-                            drawer.FinishDrawing()
-                            img = Image.open(io.BytesIO(drawer.GetDrawingText()))
-                            st.image(img, caption="Molecular Structure", use_column_width=True)
+                        # # Display molecular structure
+                        # mol = Chem.MolFromSmiles(smiles_input)
+                        # if mol:
+                        #     drawer = rdMolDraw2D.MolDraw2DCairo(800, 800)
+                        #     rdMolDraw2D.PrepareAndDrawMolecule(drawer, mol)
+                        #     drawer.FinishDrawing()
+                        #     img = Image.open(io.BytesIO(drawer.GetDrawingText()))
+                        #     st.image(img, caption="Molecular Structure", use_column_width=True)
 
                         st.markdown("<p style='font-size:12px; font-style:italic;'>PCScoreInh: GetPARPi model's Prediction confidence for molecule to be an inhibitor (%).</p>",
                                     unsafe_allow_html=True)
