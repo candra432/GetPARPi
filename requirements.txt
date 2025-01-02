@@ -4,5 +4,4 @@ torch-geometric==2.6.1
 torchdata==0.8.0
 pandas==2.0.3
 transformers
-PIL==9.4.0
 streamlit
